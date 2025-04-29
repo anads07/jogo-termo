@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo - Jogo de Adivinhação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-title">TERMO</div>
+    <div id="message" class="message"></div>
+    
+    <div class="game-wrapper">
+        <div class="instructions-section">
+            <div class="instructions-content">
+                <h2>Como jogar</h2>
+                <p>Você tem <strong>6 chances</strong> para adivinhar uma palavra de <strong>5 letras</strong>.</p>
+                <p>As cores indicarão o quão perto você está:</p>
+                <p><span class="green">Verde</span> → a letra está <strong>no lugar certo</strong></p>
+                <p><span class="yellow">Amarelo</span> → a letra está <strong>na palavra, mas em outro lugar</strong></p>
+                <p><span class="gray">Cinza</span> → a letra <strong>não faz parte da palavra</strong></p>
+            </div>
+        </div>
+
+        <div class="game-section">
+            <div id="board" class="board"></div>
+            <div class="keyboard-container">
+                <div class="keyboard">
+                    <div class="keyboard-row">
+                        <button data-key="Q">Q</button>
+                        <button data-key="W">W</button>
+                        <button data-key="E">E</button>
+                        <button data-key="R">R</button>
+                        <button data-key="T">T</button>
+                        <button data-key="Y">Y</button>
+                        <button data-key="U">U</button>
+                        <button data-key="I">I</button>
+                        <button data-key="O">O</button>
+                        <button data-key="P">P</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button data-key="A">A</button>
+                        <button data-key="S">S</button>
+                        <button data-key="D">D</button>
+                        <button data-key="F">F</button>
+                        <button data-key="G">G</button>
+                        <button data-key="H">H</button>
+                        <button data-key="J">J</button>
+                        <button data-key="K">K</button>
+                        <button data-key="L">L</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button data-key="Z">Z</button>
+                        <button data-key="X">X</button>
+                        <button data-key="C">C</button>
+                        <button data-key="V">V</button>
+                        <button data-key="B">B</button>
+                        <button data-key="N">N</button>
+                        <button data-key="M">M</button>
+                        <button id="enter" class="enter">ENTER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
